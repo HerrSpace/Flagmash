@@ -64,6 +64,7 @@ class Root(object):
 		if winner != self.games[game]["o1"] and winner != self.games[game]["o2"]: return
 		o1 = self.games[game]["o1"]
 		o2 = self.games[game]["o2"]
+		del self.games[game]
 
 		def elo_expectedA(scoreA, scoreB):
 			Ea = 1.0 / (1.0 + 10**((scoreB - scoreA)/400.0) )
@@ -86,8 +87,8 @@ class Root(object):
 			self.state[o1] += o1_offset
 			self.state[o2] += o2_offset
 
-
 		elo_mod_scores(self, winner)
+
 
 
 	def index(self):
