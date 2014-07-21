@@ -23,7 +23,7 @@ if __name__ == '__main__':
 	config_dict = {
 		'/': {
 			'request.dispatch': d,
-			'tools.staticdir.on': True,
+			'tools.staticdir.on': False,
 			'tools.staticdir.root': static_root,
 			'tools.staticdir.dir': '.',
 			'request.show_tracebacks': False

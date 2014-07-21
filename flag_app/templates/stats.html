@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<link href="/css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
 	<title>Flagmash - Ranking</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 	<table>
 	{% for flag in flags %}
 		<tr>
-			<td><img src="/flags/{{ flag[0] }}"/></td>
+			<td><img src="/static/flags/{{ flag[0] }}"/></td>
 			<td>{{flag[0][:-4].replace("_", " ")}} --- {{ flag[1] }}</td>
 		</tr>
 	{% endfor %}	
