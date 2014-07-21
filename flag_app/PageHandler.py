@@ -10,7 +10,7 @@ env = Environment(loader=PackageLoader('flag_app', 'templates'))
 
 state_file = 'state.json'
 flags_dir = 'static/flags'
-k_factor = 3.0
+k_factor = 2.0
 
 def state_init():
 	if os.path.isfile(state_file):
