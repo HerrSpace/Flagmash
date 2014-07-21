@@ -61,6 +61,7 @@ class Root(object):
 
 	def play_game(self, game, winner):
 		if game not in self.games.keys(): return
+		if winner != self.games[game]["o1"] and winner != self.games[game]["o2"]: return
 		o1 = self.games[game]["o1"]
 		o2 = self.games[game]["o2"]
 
