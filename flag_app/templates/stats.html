@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<link href="/css/main.css" rel="stylesheet" type="text/css"/>
+	<title>Flagmash - Ranking</title>
+</head>
+<body>
+
+<div id="header">
+	<h1><a href="/">FLAGMASH</a></h1>
+</div>
+<div id="main">
+	<table>
+	{% for flag in flags %}
+		<tr>
+			<td><img src="/flags/{{ flag[0] }}"/></td>
+			<td>{{flag[0][:-4].replace("_", " ")}} --- {{ flag[1] }}</td>
+		</tr>
+	{% endfor %}	
+	</table>
+</div>
+
+</body>
+</html>

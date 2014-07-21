@@ -1,3 +1,4 @@
 *.pyc
 state.json
 static/ba/*
+*~
